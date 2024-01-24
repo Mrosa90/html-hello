@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  
+ <!-- todo el encuadre del formulario -->
+ <div class="container border border-secondary mt-5">
+    <form class="row">
+  <!-- NAV1 TITULO -->
+     <nav class="navbar bg-light">
+         <div class="container-fluid">
+             <span class="navbar-brand mb-0"><h1>Forma de pago</h1></span>
+        </div>
+     </nav>
+
+<!-- alerta roja -->
+<div class="col-12 mt-4 mb-3">
+ <div class="alert alert-danger" role="alert">
+    Faltan algunos campos!
+ </div>
+</div>
+
+
+<!-- Numero targeta -->
+<div class=" col-6 mb-3">
+    <label for="Targeta" class="form-label">Targeta#</Targeta></label>
+    <input type="password" class="form-control" id="Targeta" placeholder="XXXXXXXXXXXXXXXXX">
+</div>
+
+<!-- CVV -->
+<div class="col-3">
+   <label for="CVV" class="form-label">CVV#</CVV></label>
+   <input type="text" class="form-control" id="CVV" placeholder="0000">
+</div>
+
+
+<!-- Cantidad -->
+  <div class="col-3">
+    <label for="Cantidad" class="form-label">Cantidad#</Cantidad></label>
+    <label for="floatingText"></label>
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon1"><i class="fas fa-dollar-sign"></i></span>
+      <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" aria-describedby="basic-addon1">
+    </div>
+  </div>
+
+   
+
+   
+
+
+<!-- Nombre -->
+<div class="col-6"> 
+  <label for="Nombre" class="form-label">Nombre</Nombre></label>
+  <input type="text" class="form-control" id="Nombre">
+  </div>
+
+
+<!-- Apellidos -->
+<div class="col-6"> 
+  <label for="Apellidos" class="form-label">Apellidos</Apellidos></label>
+  <input type="text" class="form-control" id="Apellidos">
+  </div>
+
+
+  <!-- Ciudad -->
+  <div class="col-6 mt-3"> 
+    <label for="Ciudad" class="form-label">Ciudad</Ciudad></label>
+    <input type="text" class="form-control" id="Ciudad">
+    </div>
+
+
+  <!-- Estado -->
+<div class="col-3 mt-3">
+  <label for="Estado" class="form-label">Estado</label>
+  <input class="form-control"  list="datalistOptions" id="Estado" placeholder="Elige un Estado...">
+  <datalist id="datalistOptions">
+    <option value="España">
+    <option value="New York">
+    <option value="Andorra">
+    <option value="Alemania">
+    <option value="Chicago">
+    <option value="Xina"> 
+    <option value="California"> 
+    <option value="Pensilvania">
+    </option>
+    </datalist>
+</div>
+
+
+  <!-- Codigo Postal -->
+  <div class="col-3 mt-3"> 
+    <label for="CodigoPostal" class="form-label">Código Postal</CodigoPostal></label>
+    <input type="text" class="form-control" id="CodigoPostal">
+    </div>
+
+
+    <!-- Pagos targeta -->
+
+   <div class="col-6 mt-3">
+    <div class="text mb-3 ">Formas de pago:</div>
+    <input type="radio" class="btn-check" id="btn-check" >
+     <label class="btn btn-secondary" for="btn-check">
+      <div class="form-check form-check-inline">
+        <input class="inlineRadioOptions" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-paypal"></i></label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="inlineRadioOptions" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-amex"></i></label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="inlineRadioOptions" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+        <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-visa"></i></label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="finlineRadioOptions" type="radio" name="inlineRadioOptions"  id="inlineRadio4" value="option4">
+        <label class="form-check-label" for="inlineRadio4"><i class="fa-brands fa-cc-mastercard"></i></label>
+      </div>
+      </div>
+           
+    
+    
+  
+  
+
+  
+
+<!-- Mensaje -->
+<div class="col-6 mt-3">
+  <label for="floatingText">Mensaje</label>
+  <textarea class="form-control"  id="floatingText" style="height: 100px"></textarea>
+  <div class="text-under-textarea text-secondary"><small>Añade cualquier nota aquí</small></div>
+</div>
+
+
+<!-- NAV FINAL -->
+<nav class="navbar bg-light mt-3">
+  <div class="container-fluid">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end"></div>
+    <span class="navbar-brand">
+        <button class="btn btn-secondary" type="button">Cancelar</button>
+        <button class="btn btn-primary" type="button">Enviar</button>
+    </span>
+    </div>  
+</nav>
+</div>
+</form>
+</div>
+</body>
+</html>
+
+
+
